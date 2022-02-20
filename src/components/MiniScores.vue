@@ -1,30 +1,30 @@
 <script setup lang="ts">
-import { OtherUser } from '../types'
-import ScoreCard from './ScoreCard.vue'
+import { OtherUser } from "../types";
+import ScoreCard from "./ScoreCard.vue";
 
 const { sortedUsers, shrink = false } = defineProps<{
-  sortedUsers: OtherUser[],
-  shrink?: boolean
-}>()
-
+  sortedUsers: OtherUser[];
+  shrink?: boolean;
+}>();
 </script>
 
 <template>
   <div class="mini-score-container">
-    <div v-for="(user, index) in sortedUsers" :class="['mini-score', shrink && 'shrink']">
-
-      <div class="mini-score-score">
-        {{ index + 1 }}.
-      </div>
+    <div
+      v-for="(user, index) in sortedUsers"
+      :class="['mini-score', shrink && 'shrink']"
+    >
+      <div class="mini-score-score">{{ index + 1 }}.</div>
       <div class="mini-score-name">{{ user.name }}</div>
       <ScoreCard :user="user" />
     </div>
     <div :class="['mini-score-mobile', shrink && 'shrink']">
       <span v-if="sortedUsers[0].score.correct === 5">
-        <span class="mini-score-name">{{ sortedUsers[0].name }}</span> has finished!
+        <span class="mini-score-name">{{ sortedUsers[0].name }}</span> gutardy!
       </span>
       <span v-else>
-        <span class="mini-score-name">{{ sortedUsers[0].name }}</span> is leading with
+        <span class="mini-score-name">{{ sortedUsers[0].name }}</span> öňde
+        barýar
       </span>
       <ScoreCard :user="sortedUsers[0]" />
     </div>
@@ -58,7 +58,7 @@ const { sortedUsers, shrink = false } = defineProps<{
   justify-content: center;
   align-items: center;
   gap: 5px;
-  margin-bottom: -20px
+  margin-bottom: -20px;
 }
 
 .mini-score-score {
@@ -71,7 +71,7 @@ const { sortedUsers, shrink = false } = defineProps<{
 }
 
 .dark .mini-score-score {
-  color: #A1A1AA;
+  color: #a1a1aa;
 }
 
 .mini-score-name {
@@ -82,9 +82,8 @@ const { sortedUsers, shrink = false } = defineProps<{
 }
 
 .dark .mini-score-name {
-  color: #E5E7EB;
+  color: #e5e7eb;
 }
-
 
 @media (max-height: 975px) {
   .mini-score.shrink {

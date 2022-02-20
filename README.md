@@ -1,17 +1,16 @@
-# [Wordle Wars](https://wordlewars.ctnicholas.dev)
+# [Söz Söweşleri](https://wordlewars.ctnicholas.dev)
 
 This repo shows how to build a multiplayer Wordle clone with [Liveblocks](https://liveblocks.io), [Vue](https://vuejs.org/), and [Vite](https://vitejs.dev/).
 
-![Wordle wars screenshot](https://wordlewars.ctnicholas.dev/screenshot.png)
+![Söz Söweşleri screenshot](https://wordlewars.ctnicholas.dev/screenshot.png)
 
 ## [Try it out](https://wordlewars.ctnicholas.dev)
-
 
 It's forked from [VVowrdle](https://github.com/yyx990803/vue-wordle) created by Evan You (@yyx990803), with some multiplayer and extra styling added.
 You can only see your opponent's letters after you've got the word of the day. Scores are saved at the end of the war,
 and a new Wordle becomes available at UTC±00:00 every day. It features a dark mode and a colourblind mode.
 
-![Wordle wars screenshot](https://wordlewars.ctnicholas.dev/screenshot-visible.png)
+![Söz Söweşleri screenshot](https://wordlewars.ctnicholas.dev/screenshot-visible.png)
 
 This repository is open sourced for learning purposes only - the original creator(s) of Wordle own all applicable rights to the game itself.
 
@@ -39,8 +38,8 @@ This repository is open sourced for learning purposes only - the original creato
 
 - Refresh your browser and you should be good to go!
 
-
 ## More with Liveblocks
+
 [![Adding live cursors to Next.js](https://www.ctnicholas.dev/images/custom-thumbnails/live-cursors-with-liveblocks.png)](https://www.ctnicholas.dev/articles/live-cursors-with-liveblocks)
 [![Build a live piano](https://livepiano.ctnicholas.dev/screenshot.png)](https://livepiano.ctnicholas.dev)
 [![Build a live basket](https://livebasket.ctnicholas.dev/screenshot.png)](https://livebasket.ctnicholas.dev)

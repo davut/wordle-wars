@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import { LetterState } from '../types'
+import { LetterState } from "../types";
 
 defineProps<{
-  letterStates: Record<string, LetterState>
-}>()
+  letterStates: Record<string, LetterState>;
+}>();
 
 defineEmits<{
-  (e: 'key', key: string): void
-}>()
+  (e: "key", key: string): void;
+}>();
 
 const rows = [
-  'qwertyuiop'.split(''),
-  'asdfghjkl'.split(''),
-  ['Enter', ...'zxcvbnm'.split(''), 'Backspace']
-]
+  "äwertyuiopö".split(""),
+  "asdfghjklňş".split(""),
+  ["Enter", ..."žzüçýbnm".split(""), "Backspace"],
+];
 </script>
 
 <template>
@@ -79,8 +79,6 @@ const rows = [
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0.3);
   transition: all 0.2s 1.5s;
 }
-
-
 
 button:last-of-type {
   margin: 0;

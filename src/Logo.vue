@@ -1,7 +1,5 @@
 <template>
-  <h1>
-    Wordle Wars
-  </h1>
+  <h1>Söz Söweşleri</h1>
 </template>
 
 <style scoped>
