@@ -466,7 +466,7 @@ function createEmojiScore(successGrid: string) {
               Başga gyzykly zatlar üçin meni
               <a
                 class="font-semibold text-green-600 dark:text-green-500"
-                href="https://twitter.com/ctnicholasdev"
+                href="https://twitter.com/indikimen"
                 >Twitterda</a
               >
               yzarlap bilersiňiz 🙂
