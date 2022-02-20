@@ -7,7 +7,7 @@ export function getWordOfTheDay() {
   }
 
   const now = dateToUtc(new Date());
-  const start = new Date(Date.UTC(2022, 2, 20));
+  const start = new Date(Date.UTC(2022, 2, 19));
   const diff = Number(now) - Number(start);
   let day = Math.floor(diff / (1000 * 60 * 60 * 24));
   while (day > answers.length) {
